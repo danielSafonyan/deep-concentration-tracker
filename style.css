@@ -54,7 +54,7 @@ form {
     font-size: 1.5rem;
     padding: 0.2em;
     text-align: center;
-    
+    width: fit-content;
 }
 
 .text-input::placeholder {
@@ -78,6 +78,6 @@ form {
 
 .timer {
     font-weight: 700;
-    font-size: 6rem;
+    font-size: 5rem;
     margin: auto;
 }

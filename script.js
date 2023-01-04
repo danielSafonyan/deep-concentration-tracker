@@ -16,6 +16,7 @@ function formSubmitHandler(event) {
         isFocusing = false
         startTime = undefined
         clearInterval(intervalId)
+        input.style.fontWeight = '400'
         // timerElem.textContent = '00:00:00'
     } else {
         input.style.borderBottom = 'none'
@@ -23,7 +24,11 @@ function formSubmitHandler(event) {
         isFocusing = true
         startTime = Date.now()
         intervalId = setInterval(updateTimer, 1000)
+        input.blur()
+        input.style.fontWeight = '700'
     }
+    const playBtn = document.querySelector('iframe')
+    console.log(document.documentElement.innerHTML)
 }
 
 function calculateElapsedTime() {
@@ -39,3 +44,16 @@ function updateTimer() {
     timerElem.textContent = calculateElapsedTime()
 }
 
+window.onSpotifyIframeApiReady = (IFrameAPI) => {
+  let element = document.getElementById('embed-iframe');
+  let options = {
+    height: 100, 
+    uri: 'spotify:playlist:05OkqemhVmD27zXfdnyNsy'
+    };
+  let callback = (EmbedController) => {};
+  const res = IFrameAPI.createController(element, options, callback);
+};
+
+
+
+// aria-label="Play"
