@@ -13,7 +13,7 @@ A web application that helps users track their time spent on a task and provide 
 -CSS
 
 ### Setup
-To start using the app, simply use the link [https://danielsafonyan.github.io/deep-concentration-tracker/] or clone the repository, start your own server [using vs code extension Live Server: https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer] and open index.html. You can then start creating new words.
+To start using the app, simply use the link [https://danielsafonyan.github.io/deep-concentration-tracker/] or clone the repository, start your own server [using vs code extension Live Server: https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer] and open index.html. 
 
 ### Contributing
 This is an open-source project and contributions are welcome. If you would like to make significant changes, please open an issue to discuss them first.
